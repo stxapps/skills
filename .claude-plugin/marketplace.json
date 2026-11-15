@@ -1,0 +1,24 @@
+{
+  "name": "stxapps-skills",
+  "description": "Free Agent Skills from STX Apps.",
+  "owner": {
+    "name": "STX Apps Co., Ltd.",
+    "email": "support@stxapps.com"
+  },
+  "plugins": [
+    {
+      "name": "stxapps",
+      "description": "Writing skills: check, fix or rewrite text so a 5th grader can follow it.",
+      "version": "0.1.0",
+      "author": {
+        "name": "STX Apps Co., Ltd."
+      },
+      "repository": "https://github.com/stxapps/skills",
+      "license": "MIT",
+      "keywords": ["writing", "plain language", "readability", "reading level"],
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/5th-grade-reading"]
+    }
+  ]
+}

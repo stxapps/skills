@@ -1,0 +1,13 @@
+{
+  "name": "stxapps-skills",
+  "private": true,
+  "description": "Free Agent Skills from STX Apps. No dependencies; the scripts need Node 18+.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
