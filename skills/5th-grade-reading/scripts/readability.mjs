@@ -211,8 +211,12 @@ export function analyze(text, { target = 5, maxWords = 20, swaps = loadDefaultSw
   const sentenceCount = prose.length;
   const wps = sentenceCount ? wordCount / sentenceCount : 0;
   const spw = wordCount ? syllableCount / wordCount : 0;
-  const grade = sentenceCount ? round(0.39 * wps + 11.8 * spw - 15.59) : 0;
-  const ease = sentenceCount ? round(206.835 - 1.015 * wps - 84.6 * spw) : 0;
+  // The formulas run past their scales on very easy or very hard text: a grade
+  // below 0, a reading ease below 0 or above 100. Show the ends of the scale.
+  const grade = sentenceCount ? Math.max(0, round(0.39 * wps + 11.8 * spw - 15.59)) : 0;
+  const ease = sentenceCount
+    ? Math.min(100, Math.max(0, round(206.835 - 1.015 * wps - 84.6 * spw)))
+    : 0;
 
   return {
     words: wordCount,

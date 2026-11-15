@@ -13,6 +13,13 @@ Public, MIT. No dependencies: scripts are Node 18+ built-ins only.
   writing gets a new plugin named for its topic (`stxapps-<topic>`), so no one
   installs a skill they didn't ask for. Bump the plugin's `version` when its
   skills change.
+- **Releasing.** Bump the plugin's `version`, commit, then tag `vX.Y.Z` to
+  match and push the tag. Make the GitHub Release from the tag and attach each
+  skill's zip, built from the tag so it holds exactly what was tagged:
+  `git archive --format=zip --prefix=<skill>/ -o <skill>.zip vX.Y.Z:skills/<skill>`.
+  Keep the file name the same every time: the README links to
+  `releases/latest/download/<skill>.zip`, which breaks if the newest Release
+  lacks it.
 - **Names.** Lowercase letters, digits and hyphens, the same in the folder and
   in `name:`. Renaming a skill breaks every install of it, so pick once.
 - **Plain writing.** `README.md` and every `SKILL.md` must pass

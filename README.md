@@ -33,9 +33,9 @@ it to one project only.
 
 ## Use it somewhere else
 
-- **Claude apps.** Zip the skill folder and upload it in Claude's skill
-  settings:
-  `cd stxapps-skills/skills && zip -r 5th-grade-reading.zip 5th-grade-reading`.
+- **Claude apps.** Download
+  [5th-grade-reading.zip](https://github.com/stxapps/skills/releases/latest/download/5th-grade-reading.zip)
+  and upload it in Claude's skill settings.
 - **Other agents.** Any agent that reads Agent Skills can use the folder as it
   is. Copy it to where that agent looks for skills.
 

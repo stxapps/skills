@@ -137,6 +137,16 @@ test('a passive that wraps a line prints on one line', () => {
   );
 });
 
+test('scores stay on their scales for very easy and very hard text', () => {
+  const easy = analyze('The cat sat on the mat.');
+  assert.equal(easy.grade, 0);
+  assert.equal(easy.readingEase, 100);
+  const hard = analyze(
+    'Organizational stakeholders must collaboratively prioritize comprehensive infrastructure modernization initiatives, notwithstanding considerable implementation complexity.',
+  );
+  assert.equal(hard.readingEase, 0);
+});
+
 test('nothing to measure is not a pass', () => {
   const r = analyze('```\ncode only\n```');
   assert.equal(r.sentences, 0);
