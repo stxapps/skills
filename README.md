@@ -3,9 +3,9 @@
 Free [Agent Skills](https://agentskills.io) for Claude Code and other AI agents.
 Each skill is a folder with a `SKILL.md` file that teaches the agent one job.
 
-| skill                                              | what it does                                                                         |
-| -------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| [`5th-grade-reading`](./skills/5th-grade-reading/) | Checks, fixes or rewrites text so a 5th grader can follow it, and keeps the meaning. |
+| skill                                              | what it does                                                                                                                             |
+| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| [`5th-grade-reading`](./skills/5th-grade-reading/) | Checks, fixes or rewrites text so a 5th grader can follow it, and keeps the meaning. [More](https://stxapps.com/tools/5th-grade-reading) |
 
 ## Install in Claude Code
 

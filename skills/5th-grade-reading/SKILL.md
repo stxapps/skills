@@ -165,12 +165,13 @@ not inside the text.
 
 **After** (grade 2):
 
-> Change your password now and then. This keeps other people out of your
-> account.
+> Change your password now and then. If you don't, someone else may get into
+> your account.
 
-Same facts: a reason (security), an action (update the password), a risk
-(someone gets in). "May" stays soft: "keeps people out" doesn't promise
-anything new. "Recommended" became a plain request, which is what it was.
+Same facts: an action (change the password), a condition (if you don't) and a
+risk (someone gets in). "May" stays "may". "This keeps other people out" would
+be shorter, but it promises something the old text didn't. "Recommended"
+became a plain request, which is what it was.
 
 **Before** (an error message, grade 13):
 
